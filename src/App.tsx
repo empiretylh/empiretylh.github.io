@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-javascript";
@@ -12,12 +12,12 @@ function App() {
     const handleFullScreen = () => {
       if (document.documentElement.requestFullscreen) {
         document.documentElement.requestFullscreen();
-      } else if (document.documentElement.mozRequestFullScreen) { /* Firefox */
-        document.documentElement.mozRequestFullScreen();
-      } else if (document.documentElement.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-        document.documentElement.webkitRequestFullscreen();
-      } else if (document.documentElement.msRequestFullscreen) { /* IE/Edge */
-        document.documentElement.msRequestFullscreen();
+      } else if (document.documentElement.requestFullscreen) { /* Firefox */
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.requestFullscreen) { /* Chrome, Safari and Opera */
+        document.documentElement.requestFullscreen();
+      } else if (document.documentElement.requestFullscreen) { /* IE/Edge */
+        document.documentElement.requestFullscreen();
       }
     }
 
