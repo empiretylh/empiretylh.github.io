@@ -1,7 +1,7 @@
 {
   "name": "thuralinhtut.github.io",
   "private": true,
-  "homepage": "https://thuralinhtut.github.io",
+  "homepage": "https://empiretylh.github.io",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
   "serve": "vite preview",
-  "deploy": "vite build && gh-pages -d dist"
+  "deploy": "vite build && gh-pages -d build"
   },
   "dependencies": {
     "react": "^18.2.0",
